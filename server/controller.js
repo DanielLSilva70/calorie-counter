@@ -50,6 +50,7 @@ const updatefood = (req, res) => {
     foodConsumed.splice(index, 1, itemToAddToList)
     res.json({ foodConsumed })
 }
+
 module.exports = {
     getCalories,
     getFood,

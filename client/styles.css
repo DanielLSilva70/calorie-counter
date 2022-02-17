@@ -1,0 +1,47 @@
+body {
+    align-items: center;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: lightslategray;
+}
+
+#food {
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    left: 100px;
+}
+
+#calories {
+ padding: 15px;
+ font-size: large;
+ text-align: center;
+ position: relative;
+ left: 100px;
+}
+
+#add {
+    padding: 15px;
+    font-size: large;
+    position: relative;
+    left: 100px;
+}
+
+ #entry {
+    padding: 15px;
+    font-size: large;
+    position: relative;
+    top: 100px;
+    left: 200px;
+} 
+
+h1 {
+    position: relative;
+    bottom: 100px;
+    right: 35px;
+}
+
