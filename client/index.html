@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calorie Counter</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/1a16204718.js" crossorigin="anonymous"></script>
 </head>
-<h1>Calorie Counter</h1>
 <body>
+    <h1>Calorie Counter</h1>
+    <div id="calorie-count" class="header">0</div>
+
 <main>
 
+    
+
+
+    
 
     <form>
+        <input
+        type="text"
+        id="entry"
+        placeholder="Enter Calories"
+        autocomplete="off"/>
+
         <input
         type="text"
         id="food"
@@ -29,18 +43,18 @@
         required/>
         
         <button id="add">+</button>    
-        
-        <input
-        type="text"
-        id="entry"
-        placeholder="Enter Calories"
-        autocomplete="off"/>
-
-
-
-
     </form>
 
+
+    <div class="food-card">
+        <h3 class="food-name">Food</h3>
+        <h4 class="food-name">Calories</h4>
+        <h4 class="food-name">Edit</h4>
+        <h4 class="food-name">Delete</h4>
+    </div>
+    <aside class="food-container">
+
+    </aside>
 
 
 </main>
