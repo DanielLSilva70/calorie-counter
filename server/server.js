@@ -24,4 +24,4 @@ app.put('/api/foods/:id', updatefood)
 
 const port = process.env.port || 5050
 
-app.listen(port, () => console.log('Server running on 5050'))
+app.listen(port, () => console.log(`Server running on ${port}!!`))
