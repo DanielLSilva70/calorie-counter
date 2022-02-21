@@ -4,7 +4,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     font-family: sans-serif;
-    background-color:teal;
+    background-color:slategray;
 }
 
 #food {
@@ -13,6 +13,7 @@ body {
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
+    border-radius: 10px;
 
 }
 
@@ -20,12 +21,13 @@ body {
  padding: 15px;
  font-size: large;
  text-align: center;
+ border-radius: 10px;
 }
 
 
 form {
     box-shadow: 10px 5px 5px;
-    background-color: cornsilk;
+    background-color:beige;
     border-radius: 10px;
     height: 200px;
     width: 100%;
@@ -33,6 +35,7 @@ form {
 #add {
     padding: 15px;
     font-size: large;
+    border-radius: 10px;
 
 }
 
@@ -40,14 +43,15 @@ form {
     padding: 15px;
     margin: 10px 40px 40px;
     font-size: large;
-    width: 80%;
-
+    width: 53%;
+    border-radius: 10px;
+  
 } 
 
 h1 {
     bottom: 75px;
     right: 25px;
-    color: white;
+    color: black;
 }
 
 .food-container {
@@ -58,8 +62,10 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:darkblue;
+    background-color:beige;
     margin: 30px 20px;
-    color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    
 }
 
