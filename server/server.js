@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
@@ -22,6 +23,6 @@ app.delete('/api/foods/:id', deleteFood)
 app.put('/api/foods/:id', updatefood)
 
 
-const port = process.env.port || 5050
+const port = process.env.PORT || SERVER_PORT
 
 app.listen(port, () => console.log(`Server running on ${port}!!`))
