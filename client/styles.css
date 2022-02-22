@@ -10,10 +10,11 @@ body {
 #food {
     padding: 15px;
     font-size: large;
-    /* text-align: center; */
+    margin-bottom: 200px;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 10px;
+    position: relative;
    
 }
 
@@ -30,6 +31,8 @@ form {
     border-radius: 10px;
     height: 200px;
     width: 100%;
+    position: relative;
+    margin-bottom: 100px;
 }
 #add {
     padding: 15px;
@@ -38,20 +41,21 @@ form {
 
 }
 
-/* #caloriesBtn {
-    background-color: blue;
+#caloriesBtn {
     padding: 15px;
     font-size: large;
     border-radius: 10px;
-    margin-top: 50px;
-} */
+    margin-bottom: 50px;
+    /* margin-right: 50px; */
+}
 
  #entry {
     padding: 15px;
     margin: 10px 40px 40px;
     font-size: large;
-    width: 53%;
+    width: 50%;
     border-radius: 10px;
+    
   
 } 
 
@@ -77,3 +81,6 @@ h1 {
     
 }
 
+#calorie-count {
+    font-size:xx-large;
+}

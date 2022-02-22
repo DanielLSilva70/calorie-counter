@@ -73,8 +73,8 @@ function buildFoodCard(food, calories, id) {
     foodH3.className = 'food-name'
     const caloriesH4 = document.createElement('h4')
     caloriesH4.className = 'food-name'
-    const pencilIcon = document.createElement('i')
-    pencilIcon.className = 'fa-solid fa-pencil'
+    // const pencilIcon = document.createElement('i')
+    // pencilIcon.className = 'fa-solid fa-pencil'
     const trashCanIcon = document.createElement('i')
     trashCanIcon.className = 'fa-solid fa-trash-can'
 
@@ -87,7 +87,7 @@ function buildFoodCard(food, calories, id) {
     console.dir(foodCard)
     foodCard.appendChild(foodH3)
     foodCard.appendChild(caloriesH4)
-    foodCard.appendChild(pencilIcon)
+    // foodCard.appendChild(pencilIcon)
     foodCard.appendChild(trashCanIcon)
     return foodCard
 }
