@@ -38,6 +38,8 @@ form {
     padding: 15px;
     font-size: large;
     border-radius: 10px;
+   margin-left: 35px;
+   position: absolute;
 
 }
 
@@ -45,17 +47,17 @@ form {
     padding: 15px;
     font-size: large;
     border-radius: 10px;
-    margin-bottom: 50px;
-    /* margin-right: 50px; */
+    margin-right: 25px;
+    position: absolute;
+    margin-top: 10px;
 }
 
  #entry {
     padding: 15px;
     margin: 10px 40px 40px;
     font-size: large;
-    width: 50%;
-    border-radius: 10px;
-    
+    width: 54%;
+    border-radius: 10px;   
   
 } 
 
