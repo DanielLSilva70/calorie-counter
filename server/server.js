@@ -23,6 +23,6 @@ app.delete('/api/foods/:id', deleteFood)
 app.put('/api/foods/:id', updatefood)
 
 
-const port = process.env.PORT || SERVER_PORT
+const port = process.env.PORT || 5050
 
 app.listen(port, () => console.log(`Server running on ${port}!!`))

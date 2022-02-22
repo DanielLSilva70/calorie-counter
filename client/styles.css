@@ -10,17 +10,16 @@ body {
 #food {
     padding: 15px;
     font-size: large;
-    text-align: center;
+    /* text-align: center; */
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 10px;
-
+   
 }
 
 #calories {
  padding: 15px;
  font-size: large;
- text-align: center;
  border-radius: 10px;
 }
 
@@ -38,6 +37,14 @@ form {
     border-radius: 10px;
 
 }
+
+/* #caloriesBtn {
+    background-color: blue;
+    padding: 15px;
+    font-size: large;
+    border-radius: 10px;
+    margin-top: 50px;
+} */
 
  #entry {
     padding: 15px;
@@ -66,6 +73,7 @@ h1 {
     margin: 30px 20px;
     color: black;
     border-radius: 10px;
+    box-shadow: 10px 5px 5px;
     
 }
 

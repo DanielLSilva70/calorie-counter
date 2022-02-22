@@ -1,4 +1,4 @@
-let globalId = 0
+
 
 const addbtn = document.getElementById('add')
 const foodConsumed = document.getElementById('food');
@@ -7,7 +7,7 @@ const enterCalories = document.getElementById('entry');
 const foodContainer = document.querySelector('.food-container');
 const calorieCount = document.getElementById('calorie-count');
 const deletebtn = document.getElementById('delete')
-
+const calorieBtn = document.getElementById('caloriesBtn')
 
 function addFood (event) {
     event.preventDefault()
@@ -15,7 +15,7 @@ function addFood (event) {
 const requestbody = buildFoodObj(foodConsumed.value,caloriesConsumed.value)
 axios.post('/api/foods', requestbody).then(res => {
     resetList(res.data.food)
-})
+    })
 }
 
 function deleteFood (id) {
@@ -28,17 +28,34 @@ function deleteFood (id) {
     })
 }
 
+function setCalories (event) {
+    event.preventDefault()
+
+    const sendCalories  = caloriesObj(enterCalories.value)
+
+    axios.post('/api/calories', sendCalories).then(res => {
+       console.log(res)
+        calorieCount.innerText = res.data.totalCalories
+        
+    })
+}
+
+function caloriesObj (calories) {
+    let newCaloriesObj = {
+        setCalories: calories
+    }
+    return newCaloriesObj
+}
 
 
 function buildFoodObj (food, calories) {
     let newFoodObj = {
         food: food,
         calories: calories
-        
     }
 return newFoodObj
-    
 }
+
 
 function resetList (foodsArr) {
     foodContainer.innerHTML = '';
@@ -46,6 +63,7 @@ function resetList (foodsArr) {
         foodContainer.appendChild(buildFoodCard(element.foodItem, element.calories, element.id))
     })
 }
+
 
 function buildFoodCard(food, calories, id) {
 
@@ -63,8 +81,6 @@ function buildFoodCard(food, calories, id) {
     foodH3.innerText = food
     caloriesH4.innerText = calories
     
-
-    
     trashCanIcon.addEventListener('click', (event) => deleteFood(id))
     console.log(food, calories, id)
 
@@ -74,8 +90,8 @@ function buildFoodCard(food, calories, id) {
     foodCard.appendChild(pencilIcon)
     foodCard.appendChild(trashCanIcon)
     return foodCard
-    
 }
+
 
 
 axios.get('/api/foods').then(res => {
@@ -88,5 +104,6 @@ axios.get('/api/calories').then(res => {
     calorieCount.innerText = res.data.totalCalories
 })
 
-
 addbtn.addEventListener('click',addFood)
+calorieBtn.addEventListener('click',setCalories)
+
