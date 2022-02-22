@@ -57,12 +57,19 @@ return newFoodObj
 }
 
 
+
 function resetList (foodsArr) {
     foodContainer.innerHTML = '';
     foodsArr.forEach((element) => {
         foodContainer.appendChild(buildFoodCard(element.foodItem, element.calories, element.id))
     })
 }
+
+function subCalories (event) {
+
+    totalCalories
+}
+
 
 
 function buildFoodCard(food, calories, id) {
@@ -93,7 +100,6 @@ function buildFoodCard(food, calories, id) {
 }
 
 
-
 axios.get('/api/foods').then(res => {
     
     resetList(res.data.food)
@@ -103,6 +109,8 @@ axios.get('/api/calories').then(res => {
     
     calorieCount.innerText = res.data.totalCalories
 })
+
+
 
 addbtn.addEventListener('click',addFood)
 calorieBtn.addEventListener('click',setCalories)

@@ -4,7 +4,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     font-family: sans-serif;
-    background-color:slategray;
+    background-color:gray;
 }
 
 #food {
@@ -15,6 +15,7 @@ body {
     margin-right: 40px;
     border-radius: 10px;
     position: relative;
+    background-color: darkgray;
    
 }
 
@@ -22,12 +23,13 @@ body {
  padding: 15px;
  font-size: large;
  border-radius: 10px;
+ background-color: darkgray;
 }
 
 
 form {
     box-shadow: 10px 5px 5px;
-    background-color:beige;
+    background-color:lightskyblue;
     border-radius: 10px;
     height: 200px;
     width: 100%;
@@ -40,6 +42,7 @@ form {
     border-radius: 10px;
    margin-left: 35px;
    position: absolute;
+   background-color: darkgray;
 
 }
 
@@ -50,6 +53,7 @@ form {
     margin-right: 25px;
     position: absolute;
     margin-top: 10px;
+    background-color: darkgray;
 }
 
  #entry {
@@ -58,6 +62,7 @@ form {
     font-size: large;
     width: 54%;
     border-radius: 10px;   
+    background-color: darkgray;
   
 } 
 
@@ -75,7 +80,7 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:beige;
+    background-color:lightskyblue;
     margin: 30px 20px;
     color: black;
     border-radius: 10px;
