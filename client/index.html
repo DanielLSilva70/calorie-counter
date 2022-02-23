@@ -10,9 +10,11 @@
     <script src="https://kit.fontawesome.com/1a16204718.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Calorie Counter</h1>
-    <div id="calorie-count" class="header"></div>
-
+    <header>
+        <h1>Calorie Counter</h1>
+        <div id="calorie-count" class="header"></div>
+    </header>
+    
 <main>
 
     <form>
@@ -22,7 +24,7 @@
         placeholder="Enter Calories"
         autocomplete="off"/>
 
-        <button id="caloriesBtn">+</button>
+        <button  id="caloriesBtn">+</button>
 
         <input
         type="text"
@@ -41,12 +43,12 @@
     </form>
 
 
-    <div class="food-card">
+    <article class="food-card">
         <h3 class="food-name">Food</h3>
         <h4 class="food-name">Calories</h4>
         <!-- <h4 class="food-name">Edit</h4> -->
         <h4 class="food-name" id="delete">Delete</h4>
-    </div>
+    </article>
     <aside class="food-container">
 
     </aside>

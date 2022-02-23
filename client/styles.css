@@ -16,6 +16,7 @@ body {
     border-radius: 10px;
     position: relative;
     background-color: darkgray;
+    outline-style: none;
    
 }
 
@@ -24,6 +25,7 @@ body {
  font-size: large;
  border-radius: 10px;
  background-color: darkgray;
+ outline-style: none;
 }
 
 
@@ -43,7 +45,6 @@ form {
    margin-left: 35px;
    position: absolute;
    background-color: darkgray;
-
 }
 
 #caloriesBtn {
@@ -63,6 +64,7 @@ form {
     width: 54%;
     border-radius: 10px;   
     background-color: darkgray;
+    outline-style: none;
   
 } 
 
@@ -90,4 +92,5 @@ h1 {
 
 #calorie-count {
     font-size:xx-large;
+    text-align: center;
 }
