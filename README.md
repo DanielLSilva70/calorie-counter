@@ -1,6 +1,6 @@
 # Calorie Counter
 
-## Now deployed on Heroku: 
+## Now deployed on Heroku: https://calorie-counter-project.herokuapp.com/
 
 ## Learn more about the devloper: https://www.linkedin.com/in/daniel-silva-696aa922b/
 
